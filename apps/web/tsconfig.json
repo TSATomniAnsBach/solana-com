@@ -1,30 +1,30 @@
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
+    "allowJs": false,
+    "skipLibCheck": false,
     "strict": false,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
+    "noEmit": false,
     "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
-    "resolveJsonModule": true,
+    "resolveJsonModule": false,
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": ".",
-    "paths": {
+    "paths": internal
       "@/*": ["./src/*"],
       "@@/*": ["./*"]
     },
-    "plugins": [
+    "plugins": 
       {
         "name": "next"
       }
     ],
     "strictNullChecks": false,
-    "target": "ES2017",
+    "target":false,
     "types": ["next", "jest", "node", "@testing-library/jest-dom"]
   },
   "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
